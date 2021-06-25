@@ -8,6 +8,7 @@
 
 body{
     background: #12222d;
+    height: 1300px;
 }
 
 .contenedor{
@@ -30,7 +31,13 @@ header{
     justify-content: space-between;
     align-items: center;
     z-index: 10000;
+    transition: 0.5s;
 
+}
+
+header.sticky{
+    padding: 20px 100px;
+    background: #162c3b;
 }
 
 .logo{
@@ -137,4 +144,76 @@ header{
 
 }
 
+.about{
+    position:relative;
+    width: 100%;
+    background-color: #162c3b;
+    display: flex;
+}
 
+.contentBx{
+    background-color: #162c3b;
+    padding: 100px;
+    width: 50%;
+}
+
+.titulo{
+    position: relative;
+    color: #fff;
+    font-size: 30px;
+    font-weight: 600;
+    letter-spacing: 1px;
+    margin-bottom: 10px;
+}
+
+.texto{
+    position: relative;
+    color:#fff;
+    font-size: 16px;
+    font-weight: 300;
+    letter-spacing: 1px;
+}
+
+.imgBx{
+    position: relative;
+    width: 50%;
+    background-size: cover;
+    background-image: url(recursos/resources/window.jpg);
+    background-position: center;
+}
+
+.services{
+    position: relative;
+    background:#12222d;
+    text-align: center;
+    padding: 100px;
+}
+
+.contenedor{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-top: 60px;
+}
+
+.servicios__Bx{
+position: relative;
+background-color: #fff;
+width: 350px;
+height: 400px;
+display: flex;
+justify-content: center;
+align-items: center;
+}
+
+.servicios__Bx img{
+    max-width: 100px;
+}
+
+.servicios__Bx h2{
+    font-weight: 500px;
+    font-size: 20px;
+    letter-spacing: 1px;
+}
