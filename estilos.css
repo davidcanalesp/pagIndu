@@ -151,7 +151,7 @@ header.sticky{
     display: flex;
 }
 
-.contentBx{
+.about .contentBx{
     background-color: #162c3b;
     padding: 100px;
     width: 50%;
@@ -174,7 +174,7 @@ header.sticky{
     letter-spacing: 1px;
 }
 
-.imgBx{
+.about .imgBx{
     position: relative;
     width: 50%;
     background-size: cover;
@@ -206,6 +206,7 @@ height: 400px;
 display: flex;
 justify-content: center;
 align-items: center;
+z-index: 10;
 }
 
 .servicios__Bx img{
@@ -216,4 +217,59 @@ align-items: center;
     font-weight: 500px;
     font-size: 20px;
     letter-spacing: 1px;
+}
+
+.technology{
+    position: relative;
+    background:#3f8ffc;
+    width: 100%;
+    padding: 100px;
+    padding-top: 300px;
+    margin-top: -300px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.technology .contentBx{
+    position: relative;
+    max-width: 1150px;
+}
+
+.technology .imgBx{
+    position: relative;
+    max-width: 250px;
+}
+
+.technology .imgBx img{
+    max-width: 100%;
+    filter: invert(1);
+}
+.client{
+    position: relative;
+    padding: 100px;
+    background: #162c3b;
+    text-align: center;
+}
+
+.client .imgBx{
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+    flex-wrap: wrap;
+    margin-top: 40px;
+}
+
+.client img{
+    display: inline-block;
+    position: relative;
+    max-width: 200px;
+    margin: 20px;
+    opacity: 0.5;
+    cursor: pointer;
+    transition: opacity 0.3s;
+}
+
+.client img:hover{
+    opacity: 1;
 }
