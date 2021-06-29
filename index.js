@@ -11,5 +11,5 @@ btnHamburguesa.addEventListener('click', ()=>{
 });
 
 window.addEventListener('scroll', ()=>{
-    encabezado.classList.toggle('sticky', window.scrollY>0 );
+    encabezado.classList.toggle('sticky', window.scrollY>0);
 });

@@ -1,5 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800;900&display=swap');
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -7,12 +7,12 @@
 }
 
 body{
-    background: #12222d;
-    height: 1300px;
+    background:#12222d;
 }
 
 .contenedor{
     position: relative;
+    top:-60px;
     left: 0;
     transition: left 0.3s;
 }
@@ -21,9 +21,9 @@ body{
     left:-400px;
 }
 
-header{
+.encabezado{
     position: fixed;
-    top: 0;
+    top:0;
     left: 0;
     width: 100%;
     padding: 40px 100px;
@@ -32,10 +32,9 @@ header{
     align-items: center;
     z-index: 10000;
     transition: 0.5s;
-
 }
 
-header.sticky{
+.encabezado.sticky{
     padding: 20px 100px;
     background: #162c3b;
 }
@@ -76,7 +75,6 @@ header.sticky{
 
 .banner img{
     position: absolute;
-    top: 0;
     left: 0;
     width: 100%;
     height: 100%;
@@ -105,8 +103,8 @@ header.sticky{
 
 .sidebar{
     position: fixed;
-    right: -400px; /*originalmente era 0 pero para oculta el menu a la derecha se puso -400px*/
     top: 0;
+    right: -400px; /*originalmente era 0 pero para oculta el menu a la derecha se puso -400px*/
     width: 400px;
     height: 100%;
     background: #12222d;
@@ -163,7 +161,7 @@ header.sticky{
     font-size: 30px;
     font-weight: 600;
     letter-spacing: 1px;
-    margin-bottom: 10px;
+    margin-bottom: 30px;
 }
 
 .texto{
@@ -176,8 +174,9 @@ header.sticky{
 
 .about .imgBx{
     position: relative;
+    display:inline-block;
     width: 50%;
-    background-size: cover;
+    background-size:cover;
     background-image: url(recursos/resources/window.jpg);
     background-position: center;
 }
@@ -189,13 +188,13 @@ header.sticky{
     padding: 100px;
 }
 
-.contenedor{
+.services .contenedor{
     width: 100%;
     display: flex;
     justify-content: space-between;
     align-items: center;
     flex-wrap: wrap;
-    margin-top: 60px;
+    margin-top: 100px;
 }
 
 .servicios__Bx{
@@ -225,7 +224,7 @@ z-index: 10;
     width: 100%;
     padding: 100px;
     padding-top: 300px;
-    margin-top: -300px;
+    margin-top: -370px;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -272,4 +271,184 @@ z-index: 10;
 
 .client img:hover{
     opacity: 1;
+}
+
+.testimonials{
+    position: relative;
+    padding: 100px;
+    background: #12222d;
+    text-align: center;
+}
+
+.testimonials h2{
+    margin-bottom: 80px;
+}
+
+.testimonials .contenedor{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 40px;
+    flex-wrap: wrap;
+}
+
+.testimonials .contentBx{
+    position: relative;
+    background: #fff;
+    padding: 60px 50px;
+    margin: 10px;
+    width: 540px;
+    height: 500px;
+    text-align:justify;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.testimonials p{
+    font-style: italic;
+    color: #000;
+}
+
+.testimonials h3{
+    width: 100%;
+    text-align: right;
+    font-weight: 500;
+}
+
+.team{
+    position: relative;
+    padding: 40px 100px; 
+    text-align: center;   
+}
+
+.team h2{
+    font-size: 30px;
+    margin-top: 40px;
+    color: #fff;
+}
+
+.team p{
+    margin: 20px 100px 60px;
+}
+.team .contenedor{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+.teamBx{
+    margin-top: 30px;
+}
+
+.team .box{
+    margin: 0 10px;
+    width: 260px;
+    padding: 5px;
+    background: #fff;
+}
+
+.team .imgBx{
+    position: relative;
+    width: 100%;
+    height: 300px;
+}
+
+.team img{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.team .content{
+    padding: 15px 0;
+}
+
+.team h3{
+    position: relative;
+    font-size: 18px;
+    line-height: 1.2em;
+}
+
+.team span{
+    position: relative;
+    font-size:16px;
+    font-weight: 300;
+}
+
+.contact{
+    position: relative;
+    padding: 100px;
+    text-align: center;
+    background-color: #162c3b;
+}
+
+.imgBx2{
+    position: relative;
+    width: 50%;
+    background-image:url(recursos/resources/bg2.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.redBg{
+    background-image:url(recursos/resources/red.jpg) !important;
+    background-size: cover;
+    background-position: center;
+}
+
+.form{
+    position: relative;
+}
+
+.form inputBx{
+    margin-bottom: 40px;
+
+}
+
+.form input{
+    width: 100%;
+    background: transparent;
+    box-shadow: none;
+    border: none;
+    outline: none;
+    padding: 10px 0;
+    font-size: 18px;
+    font-weight: 300;
+    color: #fff;
+    border-bottom: 2px solid #fff;
+}
+
+.form input::placeholder, textarea::placeholder{
+    color: #fff;
+
+}
+
+.form textarea{
+    width: 100%;
+    background: transparent;
+    box-shadow: none;
+    border: none;
+    outline: none;
+    padding: 50px 0;
+    font-size: 18px;
+    font-weight: 300;
+    color: rgb(139, 132, 132);
+    min-height: 150px;
+    border-bottom: 2px solid #fff;
+    color: #fff;
+}
+
+input[type='submit']{
+    width: 150px;
+    background: #fff;
+    color: #111;
+    cursor: pointer;
+    font-weight: 400;
+    margin-top: 40px;
+    border-radius: 10px;
 }
