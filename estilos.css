@@ -4,6 +4,7 @@
     padding: 0;
     box-sizing: border-box;
     font-family: 'Poppins',sans-serif;
+    scroll-behavior: smooth;
 }
 
 body{
@@ -451,4 +452,35 @@ input[type='submit']{
     font-weight: 400;
     margin-top: 40px;
     border-radius: 10px;
+}
+.footer{
+    position: relative;
+    background: #162c3b;
+    padding: 20px 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.footer ul
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.footer li{
+    list-style: none;
+}
+
+.footer a{
+    text-decoration: none;
+    display: inline-block;
+    margin: 0 10px;
+
+}
+
+.footer img{
+    max-width: 20px;
+    filter: invert(1);
 }
