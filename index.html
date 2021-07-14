@@ -5,10 +5,11 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Página Web Responsive</title>
+    <link rel="stylesheet" href="sal.css">
     <link rel="stylesheet" href="estilos.css">
 </head>
 <body>
-    <div class='contenedor' id= 'contenedor'>
+    <div class='contenedor' id='contenedor'>
         <header class='encabezado' id='encabezado'>
             <a href="#" class="logo">Tu marca o logotipo</a>
             <div class="toggle" id='btnHamburguesa'></div>
@@ -28,7 +29,7 @@
         <!--BANNER-->
         <div class="banner" id='home'>
             <img src="recursos/resources/bg.jpg" alt="">
-            <div class="contenido">
+            <div class="contenido" data-sal="slide-left" data-sal-delay="300">
                 <h2>Diseños Sobresalientes</h2>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Id earum odio et quaerat aut nulla veniam animi, mollitia corporis impedit aliquam, numquam saepe laboriosam quam! Maxime labore autem architecto repellendus.</p>
             </div>
@@ -36,31 +37,31 @@
 
         <!--ABOUT US-->
         <section class='about' id='about'>
-            <div class='contentBx'>
+            <div class='contentBx' data-sal="slide-right" data-sal-delay="300">
                 <h2 class='titulo'>Nosotros</h2>
                 <p class='texto'>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sit sapiente voluptatibus quasi, repellat natus voluptatem accusantium quidem reprehenderit voluptate ratione. Corporis reiciendis optio molestiae facere, aliquid illum qui dignissimos Lorem ipsum, dolor sit amet consectetur adipisicing elit. Molestias rerum quis eius, repellendus nobis tempore quos quisquam ab architecto eum ea optio totam cum saepe dolorem beatae iure.<br> Neque Lorem ipsum dolor, sit amet consectetur adipisicing elit. Enim, corporis eius tempore, sequi assumenda placeat omnis voluptatem molestiae, ullam perspiciatis praesentium? Perferendis ducimus reiciendis sapiente eius quo id blanditiis dolorum Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eius, soluta eveniet quaerat laborum veniam velit, sed earum expedita doloremque inventore a dolor? Repellendus, odit similique. Labore illo laborum quibusdam iusto! Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sit sapiente voluptatibus quasi, repellat natus voluptatem accusantium quidem reprehenderit voluptate ratione. Corporis reiciendis optio molestiae facere, aliquid illum qui dignissimos Lorem ipsum, dolor sit amet consectetur adipisicing elit. Molestias rerum quis eius, repellendus nobis tempore quos quisquam ab architecto eum ea optio totam cum saepe dolorem beatae iure.<br> Neque Lorem ipsum dolor, sit amet consectetur adipisicing elit. Enim, corporis eius tempore, sequi assumenda placeat omnis voluptatem molestiae, ullam perspiciatis praesentium? Perferendis ducimus reiciendis sapiente eius quo id blanditiis dolorum Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eius, soluta eveniet quaerat laborum veniam velit, sed earum expedita doloremque inventore a dolor? Repellendus, odit similique. Labore illo laborum quibusdam iusto!</p>
             </div>
-            <div class='imgBx'></div>           
+            <div class='imgBx'data-sal="slide-left" data-sal-delay="300"></div>           
         </section>
 
         <!--Servicios-->
         <section class='services' id='services'>
-                <h2 class='titulo'>Nuestros servicios</h2>
-                <p class='texto'>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sit sapiente voluptatibus quasi, repellat natus voluptatem accusantium quidem reprehenderit voluptate ratione. Corporis reiciendis optio molestiae facere, aliquid illum qui dignissimos Lorem ipsum, dolor sit amet consectetur adipisicing elit. Molestias rerum quis eius, repellendus nobis tempore quos quisquam ab architecto eum ea optio totam cum saepe dolorem beatae iure.<br> Neque Lorem ipsum dolor, sit amet consectetur adipisicing elit. Enim, corporis eius tempore, sequi assumenda placeat omnis voluptatem molestiae, ullam perspiciatis praesentium? Perferendis ducimus reiciendis sapiente eius quo id blanditiis dolorum Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eius, soluta eveniet quaerat laborum veniam velit, sed earum expedita doloremque inventore a dolor? Repellendus, odit similique. Labore illo laborum quibusdam iusto!</p>
+                <h2 class='titulo'data-sal="slide-right" data-sal-delay="200">Nuestros servicios</h2>
+                <p class='texto' data-sal="slide-left" data-sal-delay="200">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sit sapiente voluptatibus quasi, repellat natus voluptatem accusantium quidem reprehenderit voluptate ratione. Corporis reiciendis optio molestiae facere, aliquid illum qui dignissimos Lorem ipsum, dolor sit amet consectetur adipisicing elit. Molestias rerum quis eius, repellendus nobis tempore quos quisquam ab architecto eum ea optio totam cum saepe dolorem beatae iure.<br> Neque Lorem ipsum dolor, sit amet consectetur adipisicing elit. Enim, corporis eius tempore, sequi assumenda placeat omnis voluptatem molestiae, ullam perspiciatis praesentium? Perferendis ducimus reiciendis sapiente eius quo id blanditiis dolorum Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eius, soluta eveniet quaerat laborum veniam velit, sed earum expedita doloremque inventore a dolor? Repellendus, odit similique. Labore illo laborum quibusdam iusto!</p>
             <div class='contenedor'>
-                <div class='servicios__Bx'>
+                <div class='servicios__Bx' data-sal="slide-left" data-sal-delay="500">
                     <div>
                         <img src="recursos/resources/icon1.png" alt="">
                         <h2>Diseño</h2>
                     </div>
                 </div>
-                <div class='servicios__Bx'>
+                <div class='servicios__Bx' data-sal="slide-up" data-sal-delay="500">
                     <div>
                         <img src="recursos/resources/icon2.png" alt="">
                         <h2>Desarrollo</h2>
                     </div>
                 </div>
-                <div class='servicios__Bx'>
+                <div class='servicios__Bx' data-sal="slide-right" data-sal-delay="500">
                     <div>
                         <img src="recursos/resources/icon3.png" alt="">
                         <h2>Branding</h2>
@@ -194,11 +195,8 @@
 
         </section>
 
-
-
-
     </div>
-    <script src="index.js
-    "></script>        
+    <script src="sal.js"></script>
+    <script src="index.js"></script>        
 </body>
 </html>

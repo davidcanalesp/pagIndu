@@ -1,4 +1,9 @@
-console.log('en el script');
+//console.log('en el script');
+/*sal({
+    //threshold: 1,
+    once: false
+  });*/
+  
 const btnHamburguesa = document.getElementById('btnHamburguesa');
 const sidebar = document.getElementById('sidebar');
 const contenedor = document.getElementById('contenedor');
@@ -48,3 +53,8 @@ linkTestimonios.addEventListener('click', ()=>{
 linkEquipo.addEventListener('click', ()=>{
     btnHamburguesa.click();
 });
+
+sal({
+    //threshold: 1,
+    once: false
+  });
